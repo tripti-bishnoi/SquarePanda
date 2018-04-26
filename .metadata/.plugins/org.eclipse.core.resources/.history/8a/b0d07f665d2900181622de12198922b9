@@ -1,0 +1,42 @@
+package com.leetcode.medium;
+
+
+public class FractiontoRecurringDecimal_166 {
+
+	public static void main(String[] args) {
+
+		fractionToDecimal(100, 3);
+	}
+
+	public static String fractionToDecimal(int numerator, int denominator) {
+
+		double quotient = (double) numerator / (double) denominator;
+
+		char[] result = Double.toString(quotient).toCharArray();
+
+		boolean fractionFlag = false;
+		int start = 0;
+		int end = 0;
+		String output = "";
+		for(int i=0; i<result.length; i++){
+			char ch = result[i];
+			if(ch == '.'){
+				fractionFlag = true;
+				start = i+1;
+			}
+			if(fractionFlag){
+				if(result[start]==ch){
+					for(int j=0;j<start;j++){
+						output += result[j];
+					}
+					output = output + '(' + result[start] + ')';
+					break;
+				}
+			}
+		}
+		
+
+		return output;
+	}
+
+}

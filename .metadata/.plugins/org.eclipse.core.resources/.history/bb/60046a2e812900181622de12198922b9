@@ -1,0 +1,15 @@
+package com.leetcode.medium;
+
+public class ContainsDuplicateIII_220 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
+
+		return false;
+	}
+	
+}

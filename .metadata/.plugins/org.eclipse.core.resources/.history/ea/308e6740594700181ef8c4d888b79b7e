@@ -1,0 +1,10 @@
+package com.random.practice;
+
+public class randomtest {
+
+	public static void main(String[] args) {
+
+		"time".toLowerCase().contains("me".toLowerCase());
+	}
+
+}

@@ -1,0 +1,12 @@
+package com.random.practice;
+
+import java.util.HashSet;
+
+public class randomtest {
+
+	public static void main(String[] args) {
+		System.out.println("timE".toLowerCase().contains("me".toLowerCase()));
+	}
+
+	
+}

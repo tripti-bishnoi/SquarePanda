@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.jsonschema.api&apos; to &apos;com.tau.jsonschemaapi&apos;&#x0A;- Original project: &apos;JSONSchemaAPI&apos;&#x0A;- Original element: &apos;JSONSchemaAPI/src/com.jsonschema.api&apos;&#x0A;- Renamed element: &apos;JSONSchemaAPI/src/com.tau.jsonschemaapi&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.jsonschema.api&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.jsonschema.api" name="com.tau.jsonschemaapi" qualified="false" references="true" stamp="1523069550504" textual="false" version="1.0"/>
+</session>

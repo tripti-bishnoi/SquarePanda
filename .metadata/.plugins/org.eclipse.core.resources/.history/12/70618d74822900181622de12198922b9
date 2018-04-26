@@ -1,0 +1,18 @@
+package com.leetcode.medium;
+
+public class ContainsDuplicateIII_220 {
+
+	public static void main(String[] args) {
+
+		int[] input = {3,7,1,9,2,6,4,8};
+		containsNearbyAlmostDuplicate(input,3,7); //should return true
+	}
+
+	public static boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
+
+		
+		
+		return false;
+	}
+	
+}

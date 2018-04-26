@@ -1,0 +1,22 @@
+package com.leetcode.medium;
+
+public class DivideTwoIntegers_29 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		divide(10,5);
+	}
+
+	public static int divide(int dividend, int divisor) {
+
+		double result = 0;
+		
+		System.out.println(dividend << 1);
+		System.out.println(dividend >> 1);
+		System.out.println("------------");
+		
+		
+		return (int) result;
+	}
+
+}

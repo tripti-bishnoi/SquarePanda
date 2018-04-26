@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;com.leetcode.medium.WordLadder127&apos; to &apos;WordLadder_127&apos;&#x0A;- Original project: &apos;LeetCodeProblem&apos;&#x0A;- Original element: &apos;com.leetcode.medium.WordLadder127&apos;&#x0A;- Renamed element: &apos;com.leetcode.medium.WordLadder_127&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;WordLadder127&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;com.leetcode.medium{WordLadder127.java[WordLadder127" matchStrategy="1" name="WordLadder_127" qualified="false" references="true" similarDeclarations="false" stamp="1521566035975" textual="false" version="1.0"/>
+</session>

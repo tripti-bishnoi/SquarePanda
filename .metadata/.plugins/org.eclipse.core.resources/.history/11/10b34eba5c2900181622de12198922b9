@@ -1,0 +1,25 @@
+package com.leetcode.medium;
+
+
+public class FractiontoRecurringDecimal_166 {
+
+	public static void main(String[] args) {
+
+		fractionToDecimal(2, 3);
+	}
+
+	public static String fractionToDecimal(int numerator, int denominator) {
+
+		double quotient = (double) numerator / (double) denominator;
+
+		char[] result = Double.toString(quotient).toCharArray();
+
+		for(char ch: result){
+			System.out.println(ch);
+		}
+		
+
+		return "";
+	}
+
+}

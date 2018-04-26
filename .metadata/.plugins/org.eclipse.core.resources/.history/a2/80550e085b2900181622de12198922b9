@@ -1,0 +1,18 @@
+package com.leetcode.medium;
+
+public class FractiontoRecurringDecimal_166 {
+
+	public static void main(String[] args) {
+		
+		fractionToDecimal(5,2);
+	}
+
+	public static String fractionToDecimal(int numerator, int denominator) {
+		
+		float result = numerator/denominator;
+		System.out.println(result);
+
+		return "";
+	}
+
+}

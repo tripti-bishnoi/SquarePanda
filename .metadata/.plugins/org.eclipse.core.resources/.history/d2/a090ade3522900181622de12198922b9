@@ -1,0 +1,50 @@
+package com.leetcode.medium;
+
+public class DivideTwoIntegers_29 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		divide(0, 0);
+	}
+
+	private static int divide(int dividend, int divisor) {
+		// overflow conditions
+		if ((dividend == Integer.MIN_VALUE && divisor == -1) || divisor == 0)
+			return Integer.MAX_VALUE;
+		// long result = divideHelper(Math.abs(dividend), Math.abs(divisor));
+		System.out.println(Integer.signum(dividend ^ divisor));
+		return 1;
+		// if ((dividend < 0 && divisor > 0) || (dividend > 0 && divisor < 0))
+		// return (int) (0 - result);
+		// else
+		// return (int) result;
+	}
+
+	public static long divideHelper(long dividend, long divisor) {
+
+		if (divisor == 0)
+			return -1;
+		if (dividend == 0)
+			return 0;
+		if (dividend == divisor)
+			return 1;
+		if (divisor == 1)
+			return dividend;
+
+		long quotient = 1;
+		long temp = divisor;
+
+		while (temp < dividend) {
+			quotient <<= 1;
+			temp <<= 1;
+		}
+
+		if (temp > dividend) {
+			quotient >>= 1;
+			temp >>= 1;
+		}
+
+		return quotient + divideHelper(Math.abs(dividend - temp), Math.abs(divisor));
+	}
+
+}

@@ -1,0 +1,34 @@
+package com.leetcode.medium;
+
+public class ContainsDuplicateIII_220 {
+
+	public static void main(String[] args) {
+
+		int[] input = { -1,2147483647 };
+		
+		System.out.println(containsNearbyAlmostDuplicate(input, 1, 2147483647)); // should
+																		// return
+																		// true
+	}
+
+	public static boolean containsNearbyAlmostDuplicate(int[] nums, int k, int t) {
+
+		for (int i = 0; i < nums.length; i++) {
+			for (int j = i + k; j >= i; j--) {
+				if (j < nums.length) {
+					long diff = 0;
+					if(nums[i] > nums[j]){
+						diff = nums[i] - nums[j];
+					} else {
+						diff = nums[j] - nums[i];
+					}
+					if (Math.abs(diff) <= t)
+						return true;
+				}
+			}
+		}
+
+		return false;
+	}
+
+}
